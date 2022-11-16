@@ -21,6 +21,7 @@ public class BankAcc {
     //firstname getter and setter:
 
     public String getFirstname() {
+
         return this.firstname;
     }
 
@@ -31,61 +32,69 @@ public class BankAcc {
     //lastname getter and setter:
 
     public String getLastname() {
+
         return this.lastname;
     }
 
     public void setLastname(String newLastName) {
+
         this.lastname = newLastName;
     }
 
     // date getter and setter
 
     public String getDate() {
+
         return this.date;
     }
 
     public void setDate(String newDate) {
+
         this.date = newDate;
     }
 
     // account number getter and setter:
 
     public Integer getAccountnumber() {
+
         return this.accountNumber;
     }
 
     public void setAccountNumber(Integer newAccountNumber) {
+
         this.accountNumber = newAccountNumber;
     }
 
     // balance getter and setter:
 
     public Integer getBalanca() {
+
         return this.balance;
     }
 
     public void setBalance( Integer newBalance) {
+
         this.balance = newBalance;
     }
 
     // Methods:
 
-    public void deposit (int money) {
-        balance = balance + money;
+    void deposit (int money) {
+        System.out.println(balance += money);
 
 
     }
 
-    public void withdrawal (int money) {
-        balance = balance - money;
+    void withdrawal (int money) {
+        System.out.println(balance -= money);
+
 
     }
 
     //method for interest payments into bank account
+    void interest(double intpay) {
+        System.out.println(balance += (balance * intpay));
 
-
-    public void interest(int intpay) {
-        balance = balance + (balance * intpay);
     }
 
 }
